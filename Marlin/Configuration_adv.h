@@ -1870,6 +1870,14 @@
 #define MAX_CMD_SIZE 96
 #define BUFSIZE 4
 
+// Custom overrides for planner and serial buffer
+#if ENABLED(CALLRED_CUSTOM_SETTINGS)
+#undef BLOCK_BUFFER_SIZE
+#undef BUFSIZE
+#define BLOCK_BUFFER_SIZE 64
+#define BUFSIZE 32
+#endif
+
 // Transmission to Host Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
 // To buffer a simple "ok" you need 4 bytes.
