@@ -76,6 +76,9 @@
 #define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Ender-3 Pro)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
+// Section to enable custom settings
+#define CALLRED_CUSTOM_SETTINGS
+
 /**
  * *** VENDORS PLEASE READ ***
  *
